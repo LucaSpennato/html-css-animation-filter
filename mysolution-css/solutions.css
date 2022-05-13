@@ -110,7 +110,7 @@
 
 /* ex 9 */
 .ex-9-img{
-    transition: transform 3s, border-radius 1s 3s;
+    transition: transform 3s linear, border-radius 1s 3s ease-in-out;
     /* transition: all 3s; */
 }
 
@@ -119,3 +119,21 @@
     transform: translate(50%);
     border-radius: 50%;
 }
+
+/* ex 10 */
+.ex-10-icon{
+    animation: spin 2s infinite linear;
+}
+
+
+@keyframes spin{
+    0%{
+        transform:rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* ex 11 */
