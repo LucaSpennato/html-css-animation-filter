@@ -139,10 +139,10 @@
 /* ex 11 */
 
 .ex-11-icon:hover{
-    animation: slowspin 2s;
+    animation: spin-turn 2s;
 }
 
-@keyframes slowspin{
+@keyframes spin-turn{
      0%{
         transform: rotate(0);
      }
@@ -155,3 +155,47 @@
         transform: rotate(0deg);
      }
 }
+
+/* ex 12 */
+
+.ex-12-button:hover .ex-12-top-white{
+    animation: a-d 1s linear;
+}
+
+@keyframes a-d{
+    0%{
+        transform: translate(0);
+    }
+
+    25%{
+        transform: translate(50px)
+    }
+
+    50%{
+        transform: translate(90px);
+    }
+
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: d-a 1s linear;
+}
+
+@keyframes d-a{
+    0%{
+        transform: translate(0);
+    }
+
+    25%{
+        transform: translate(-50px)
+    }
+
+    50%{
+        transform: translate(-90px);
+    }
+
+}
+
+
+
+
