@@ -28,8 +28,15 @@
 
 /* ex 4 */
 .ex-4-square{
-    animation: ex4 3s 2s infinite;
+    /* animation: ex4 3s 2s infinite; */
+    transition: opacity 0.5s linear;
 }
+
+
+.ex-4-square:hover{
+    opacity: 0;
+}
+
 
 @keyframes ex4{
     0%{
@@ -48,7 +55,13 @@
     position: absolute;
     width: 100px;
     top: 50px;
-    animation: meme 3s 2s infinite;
+    z-index: 1;
+    /* animation: meme 3s 2s infinite; */
+    transition: opacity 3s 0.7s;
+}
+
+.row:hover .meme{
+    opacity: 1;
 }
 
 @keyframes meme{
@@ -196,6 +209,68 @@
 
 }
 
+/* ex 13 */
+.ex-13-button:hover .ex-13-top-white{
+    position: absolute;
+    animation: rotatea 3s linear;
+}
 
+@keyframes rotatea {
+    0%{
+        transform: translate(0, 0);
+    }
+
+    20%{
+        transform: translate(150px, 0);
+    }
+    
+    40%{
+        transform: translate(150px, 65px);
+    }
+
+    60%{
+        transform: translate(-45px, 65px);
+    }
+
+    80%{
+        transform: translate(-45px, 0px);
+    }
+
+    100%{
+        transform: translate(0, 0);
+    }
+
+}
+
+.ex-13-button:hover .ex-13-bottom-white{
+    position: absolute;
+    animation: rotateb 3s linear;
+}
+
+@keyframes rotateb {
+    0%{
+        transform: translate(0, 0);
+    }
+
+    20%{
+        transform: translate(-125px, 0px);
+    }
+    
+    40%{
+        transform: translate(-125px, -65px);
+    }
+
+    60%{
+        transform: translate(65px, -65px);
+    }
+
+    80%{
+        transform: translate(65px, 0);
+    }
+
+    100%{
+        transform: translate(0, 0);
+    }   
+}
 
 
