@@ -77,13 +77,11 @@
 }
 
 .ex-5-square:hover{
-    width: 100px;
-    height: 100px;
+    transform: scale(2);
 }
 
 .ex-5-square:active{
-    width: 20px;
-    height: 20px;
+    transform: scale(0.5);
 }
 
 /* ex 6 */
@@ -111,3 +109,13 @@
 }
 
 /* ex 9 */
+.ex-9-img{
+    transition: transform 3s, border-radius 1s 3s;
+    /* transition: all 3s; */
+}
+
+.ex-9-img:hover{
+    transform: scale(2);
+    transform: translate(50%);
+    border-radius: 50%;
+}
