@@ -137,3 +137,21 @@
 }
 
 /* ex 11 */
+
+.ex-11-icon:hover{
+    animation: slowspin 2s;
+}
+
+@keyframes slowspin{
+     0%{
+        transform: rotate(0);
+     }
+
+     50%{
+        transform: rotate(320deg);
+     }
+
+     60%{
+        transform: rotate(0deg);
+     }
+}
